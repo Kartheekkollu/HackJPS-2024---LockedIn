@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://www.webflow.com --><!-- Last Published: Thu Apr 04 2024 18:11:46 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="lockedin-aa73c9.webflow.io" data-wf-page="65fec84561e9120bf5801035"
+    data-wf-site="65fec84561e9120bf5801018">
+
+<head>
+    <meta charset="utf-8" />
+    <title>LockedIn</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <link href="https://assets-global.website-files.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://assets-global.website-files.com/img/webclip.png" rel="apple-touch-icon" />
+    <link href="music.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="nav">
+        <a href="popup.html" class="tabs w-button">Home</a>
+        <a href="tasks.html" class="tabs w-button">Tasks</a>
+        <a href="blockSites.html" class="tabs w-button">Block Sites</a>
+        <a href="pomodoroTimer.html" class="tabs w-button">Pomodoro Timer</a>
+        <a href="music.html" aria-current="page" class="tabs w-button w--current">Music</a>
+    </div>
+    <h1 class="heading-4">Music</h1>
+    <p class="paragraph-3">Stay focused with ambient noises and calm music</p>
+    <h1 class="heading-5">Ambient noises</h1>
+    <div class="ambient-noices">
+        <div id="w-node-_672078a7-71e0-eda3-20ac-d90a736092de-f5801035" class="music-holder-1">
+            <img src="./MusicImages/waterfall.jpg" loading="lazy" alt="" class="image-3" id ="waterfall"/>
+            <h1 class="heading-7">Waterfall</h1>
+            <p class="paragraph-4">Let the gentle cascade of water wash away your distractions.</p>
+        </div>
+        <div class="bottom-bar" id="waterfallAudio">
+            <audio controls>
+                <source src="./Music/waterfall.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="w-node-_695dcc37-5799-e1a6-2f60-db568f8f75be-f5801035" class="music-holder-2">
+            <img src="./MusicImages/morningBirds.jpg" loading="lazy" id = "morningBirds" alt="" class="image-3" />
+            <h1 class="heading-7">Morning Birds</h1>
+            <p class="paragraph-4">Let the birds' melodies gently guide you into the day.</p>
+        </div>
+        <div class="bottom-bar" id="morningBirdsAudio">
+            <audio controls>
+                <source src="./Music/morningBirds.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="w-node-ff2481c1-93f0-dd08-784c-78f817e57ca3-f5801035" class="music-holder-3">
+            <img src="./MusicImages/storm.jpg" loading="lazy" alt="" class="image-3" id = "storm"/>
+            <h1 class="heading-7">Storm</h1>
+            <p class="paragraph-4">Feel the electrifying energy in the air as thunder rumbles.</p>
+        </div>
+        <div class="bottom-bar" id="stormAudio">
+            <audio controls>
+                <source src="./Music/rain-and-thunder.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="w-node-b3391525-db7a-877d-f5a0-f76f3af5e495-f5801035" class="music-holder-5">
+            <img src="./MusicImages/gentleWind.jpg" loading="lazy" alt="" class="image-3" id = "wind"/>
+            <h1 class="heading-7">Gentle Wind</h1>
+            <p class="paragraph-4">Allow the wind to calmly sweep through your surroundings.</p>
+        </div>
+        <div class="bottom-bar" id="windAudio">
+            <audio controls>
+                <source src="./Music/wind.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <h1 class="heading-6">Calm music</h1>
+    <div class="calm-music">
+        <div id="w-node-b7b141b3-b918-0594-9834-69328c3e10ec-f5801035" class="music-holder-6">
+            <img src="./MusicImages/watermelon.jpg" loading="lazy" alt="" id = "crazyGlue" class="image-3" />
+            <h1 class="heading-7">Crazy Glue</h1>
+            <p class="paragraph-4">by Josh Woodward</p>
+        </div>
+        <div class="bottom-bar" id="crazyGlueAudio">
+            <audio controls>
+                <source src="./Music/Crazy Glue.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="w-node-_43786b7d-1f55-a6f1-c3bb-89531be5d159-f5801035" class="music-holder-7">
+            <img src="./MusicImages/strings.jpg" loading="lazy" alt="" class="image-3" id="strings"/>
+            <h1 class="heading-7">Strings</h1>
+            <p class="paragraph-4">by anotherday</p>
+        </div>
+        <div class="bottom-bar" id="stringsAudio">
+            <audio controls>
+                <source src="./Music/Strings.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    <h1 class="heading-8">Your music</h1>
+    <div class="btnContainer" style = "display: flex; flex-direction: column; align-items: center;">
+        <div id="uploadedAudioContainer" style="display: none; height: 65px; width: 100%; justify-content: center;">
+            <audio id="uploadedAudio" controls style="height: 65px"></audio>
+        </div>
+        <button id="uploadBtn" class="button-4 w-button">Upload your own music</button>
+        <input type="file" id="fileInput" accept=".mp3, .m4a" style="display: none;" multiple />      
+    </div>
+    <script src="music.js"></script>
+</body>
+</html>
